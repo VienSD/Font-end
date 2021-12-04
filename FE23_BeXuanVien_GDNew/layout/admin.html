@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="../css/admin.css" type="text/css">
+</head>
+<body>
+<div class="main">
+	<div class="sidebar">
+		<div class="logo"><img src="../img/logo.png" width="320px"></div>
+		<div class="menu_sidebar">
+			<ul>
+				<li>
+					<a href="#">Dashboard </a>
+				</li>
+				<li>
+					<a href="#">Profile</a>
+				</li>
+				<li>
+					<a href="#">Table</a>
+				</li>
+				<li>
+					<a href="#">Map</a>
+				</li>
+				<li>
+					<a href="#">Blank</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="header">
+			<div class="form_search">
+				<form method="GET" action="">
+					<label class="sr-only" for="input_search">Tìm kiếm...</label>
+				      <div class="input-group">
+				        <input type="text" class="form-control" id="input_search" placeholder="Tìm kiếm...">
+				        <div class="input-group-prepend">
+				          <button class="input-group-text">
+				          	<i class="fas fa-search"></i>
+				          </button>
+				        </div>
+				    </div>
+				</form>
+			</div>
+			<div class="account_manage">
+				<button class="btn_acc">
+					vien <img src="../img/avt.png" alt="">
+					<i class=" fas fa-angle-down"></i>
+					<div class="sub_menu" id="submenu_acc">
+						<ul>
+							<li><a href="#">Profile <i class="fas fa-user"></i></a></li>
+							<li><a href="#">reset password <i class="fas fa-key"></i></a></li>
+							<li><a href="#">setting <i class="fas fa-cog"></i></a></li>
+							<li><a href="#">logout<i class="fas fa-sign-out-alt"></i></a></li>
+						</ul>
+					</div>
+				</button>
+				
+			</div>
+		</div>
+		<div class="container">
+			<h2>Thêm mới người dùng</h2>
+			<div class="content_form">
+				<form method="POST" id="form_insert">
+					<fieldset>
+						<legend>Thêm mới</legend>
+						<table>
+							<tr>
+								<td>Họ tên: </td>
+								<td><input type="text" class="input_fullname" name="fullname"></td>
+							</tr>
+							<tr>
+								<td>Tài khoản:</td>
+								<td>
+									<label></label>
+									<input type="email" class="input_username" name="username"></td>
+							</tr>
+							<tr>
+								<td>Mật khẩu</td>
+								<td><input type="password" id="password" name="password"></td>
+							</tr>
+							<tr>
+								<td>Mật khẩu xác nhận</td>
+								<td><input type="password" id="password_confirm" name="password_confirm"></td>
+							</tr>
+							<tr>
+								<td>Giới tính</td>
+								<td>
+									<input type="radio" value="1" class="gender" name="gender" checked> Nam <br/>
+									<input type="radio" value="0" class="gender" name="gender"> Nữ
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="button" id="btn_save">Lưu</button>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="chart-sp">
+                <div class="chart">
+                    <div>
+                        <span>Dashboard</span>
+                    </div>
+                </div>
+                <div class="sp">
+                    <div class="cl"></div>
+                    <div class="sp-menu">
+                        
+                    </div>
+                </div>
+         </div>
+         <div class="option_table">
+         	<h1>Tổng kết doanh số bán hàng</h1>
+         	<table class="table">
+				 <thead>
+				    <tr>
+				      <th scope="col" class="Last">#</th>
+				      <th scope="col" class="Last">Name</th>
+				      <th scope="col" class="Last">Date</th>
+				      <th scope="col" class="Last">Price</th>
+				    </tr>
+				 </thead>
+				 <tbody>
+				    <tr class="tab">
+				      <th scope="row">1</th>
+				      <td>Quản lý ưu tú</td>
+				      <td>Tues 23,2021 </td>
+				      <td>10000$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">2</th>
+				      <td>Nhân Viên Xuất Sắc</td>
+				      <td>Tues 24,2021 </td>
+				      <td>9000$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">3</th>
+				      <td>Nhân viên bán hàng Xuất Sắc</td>
+				      <td>Tues 25,2021 </td>
+				      <td>8000$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">4</th>
+				      <td> Nhân viên bán nhiều hàng nhất</td>
+				      <td>Tues 26,2021 </td>
+				      <td>7500$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">5</th>
+				      <td>Quan lý ưu tú</td>
+				      <td>Tues 19,2021 </td>
+				      <td>10000$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">6</th>
+				      <td>Nhân viên chăm chỉ</td>
+				      <td>Tues 20,2021 </td>
+				      <td>7000$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">7</th>
+				      <td>Nhân viên ưu tú</td>
+				      <td>Tues 12,2021 </td>
+				      <td>5000$</td>
+				    </tr>
+				    <tr class="tab">
+				      <th scope="row">8</th>
+				      <td>Nhân viên ưu tú</td>
+				      <td>Tues 22,2021 </td>
+				      <td>5000$</td>
+				    </tr><tr class="tab">
+				      <th scope="row">9</th>
+				      <td>Nhân viên ưu tú</td>
+				      <td>Tues 18,2021 </td>
+				      <td>5000$</td>
+				    </tr><tr class="tab">
+				      <th scope="row">10</th>
+				      <td>Nhân viên ưu tú</td>
+				      <td>Tues 10,2021 </td>
+				      <td>5000$</td>
+				    </tr>
+			  </tbody>
+			</table>
+         </div>
+	</div>
+</div>
+<div>
+		<div class="footer_content_copyright">
+            <div>
+                <p>Copyright 2021 © HOA BAN FOOD™</p>
+            </div>
+         </div>
+	</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/admin.js" type="text/javascript" charset="utf-8" async defer></script>
+</html>

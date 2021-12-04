@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="../css/home.css" type="text/css">
+</head>
+<body>
+<div class="header">
+	<div class="contact">
+		<div class="ct_number">
+			HOTLINE: 0914.268.535
+		</div>
+		<div class="ct_network">
+			<ul>
+				<li> <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+				<li> <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i> Youtube</a></li>
+				<li> <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i>TikTok</a></li>
+				<li> <a href="https://www.hoabancamp.com/">HOABANCAMP</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_header">
+		<div class="logo"><a href="home.html"><img src="../img/logo.png" alt="" width="250px" height="55px" ></a></div>
+
+		<div class="search"> <form method="GET" action="">
+					<label class="sr-only" for="input_search">Tìm sản phẩm...</label>
+				     <div class="input-group">
+				        <input type="text" class="form-control" id="input_search" placeholder="Tìm sản phẩm...">
+				        <div class="input-group-prepend">
+				          <button class="input-group-text">
+				          	<i class="fas fa-search"></i>
+				          </button>
+				        </div>
+				    </div>
+			</form>
+		</div>
+			
+		<div class="right">
+			<ul>
+				<li> <i class="fas fa-phone-alt"></i>0914.268.535</li>
+				<li><a href="log">ĐĂNG NHẬP/ĐĂNG KÍ</a></li>
+				<li><a href="">GIỎ HÀNG <i class="fas fa-shopping-bag"></i></a></li>
+		</div>
+	</div>
+	<div class="content">
+		<ul>
+			<li> <a href="home.html"><i class="fas fa-home"></i> TRANG CHỦ </a></li>
+			<li> <a href="product.html"><i class="fas fa-bars"></i> SẢN PHẨM</a>
+				<ul>
+					<div class="sub_menu">
+							<div class="aa">
+								<ul>
+									<img src="../img/l1.png" alt="" width="220px" height="100px">
+									<h3>THỰC PHẨM VÀ GIA VỊ</h3>
+									<li>Gia vị Tây Bắc</li>
+									<li>Thịt & Cá Gác Bếp</li>
+									<li>Măng Rừng Khô</li>
+									
+								</ul>
+								<ul>
+									<img src="../img/l2.png" alt="" width="220px" height="100px">
+									<h3>ĐỒ UỐNG</h3>
+									<li>Mật Ong Rừng Tây Bắc</li>
+									<li>Tinh Bột Nghệ</li>
+									<li>Nụ Tam Thất</li>
+									
+								</ul>
+								<ul>
+									 <img src="../img/l3.png" alt="" width="220px" height="100px">
+									 <h3>RƯỢU VÀ ĐỒ NGÂM</h3>
+									 <li>Rượu Ngâm</li>
+									 <li>Nấm Ngọc Cẩu</li>
+									 <li>Cây Đau Lưng</li>
+									 <li>Đảng Sâm Rừng</li>
+									 <li>Sâu Chít</li>
+									 <li>Củ Cây Béo</li>
+								</ul>
+								<ul>
+									 <img src="../img/l4.png" alt=""> 
+								</ul>
+
+							</div>
+							
+						</div>
+				</ul>
+			</li>
+			<li> <a href="home.html"></a><i class="fas fa-bell"></i> MÙA KHAI THÁC SẢN PHẨM</li>
+			<li> <a href="home.html"></a> <i class="far fa-bags-shopping"></i> COMBO</li>
+			<li> <a href="home.html"></a><i class="fas fa-scarf"></i> MÂY TRE ĐAN</li>
+			<li> <a href="home.html"></a><i class="fas fa-money-check-edit"></i> ĐI & VIẾT</li>
+			<li> <a href="home.html"></a> <i class="far fa-users"></i>GIỚI THIỆU</li>
+			<li> <a href="home.html"></a><i class="fas fa-map-marker-check"></i> LIÊN HỆ</li>
+		</ul>
+	</div>
+
+</div>
+<br>
+	<div class="face">
+	<button>Login with facebook</button> </div>
+	<div class="log">
+		<div class="row">
+				<div class="col-xl-6 col-lg-6 col-sm-6 mb-6"> 
+										<fieldset>
+					<legend>Đăng Nhập</legend>
+					<form action="#" method="POST" id="login_form">
+						<label>
+							<p>Tên tài khoản hoặc địa chỉ email * </p><br>
+							<input onkeyup="hideErrorUsername()" type="text" name="email" id="input_email">
+						</label>
+						<p id="error_username" style="color: red"></p>
+						
+						<label>
+							<p>Mật Khẩu </p><br>
+							<input type="password" name="password" id="input_password">
+						</label>
+						<p id="error_password" style="color: red"></p>
+						<label>
+							<div class="r">
+							<input type="checkbox" name="remember">
+							<p>Ghi Nhớ Mật Khẩu</p>
+							</div>
+						</label>
+						
+						<div class="form_footer">
+							<button onclick="validateForm()" type="button">Đăng Nhập</button>
+							
+						</div>
+					</form>
+				</fieldset>
+					</div>
+				
+	</div>
+	<br>
+	<hr>
+
+<div class="ft">
+	<div class="r">
+		<div class="col-xl-4 col-lg-4 col-sm-6 mb-3"><b>LIÊN HỆ VỚI CHÚNG TÔI</b> <br>
+			<b> 0914.268.535 – 0961.214.914</b>
+			Giờ làm việc: Thứ 2 -> thứ 7 từ <b>8:00</b> đến <b>21:30</b> | Chủ Nhật từ <b>8:30</b>đến <b>17:30</b> <br>
+			<b>HOA BAN FOOD™</b> <br>
+			Nhà số 7, Khu liền kề Minori, 67A Trương Định, Quận Hai Bà Trưng, Hà Nội
+		</div>
+		<div class="col-xl-4 col-lg-4 col-sm-6 mb-3"> <b>FACEBOOK</b>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-sm-6 mb-3"> <b>YOUTUBE</b> <br>
+				<table>
+					<tr>
+						<td rowspan="2"> <img src="../img/y1.png" alt="" width="40px" height="40px"></td>
+						<td> HOABANFOOD</td>
+					</tr>
+					<tr>
+					<td><i class="fab fa-youtube"> 999+</td> </tr>
+
+						<tr>
+						<td rowspan="2"> <img src="../img/y2.png" alt="" width="40px" height="40px"></td>
+						<td> HOABANCAMP</td>
+					</tr>
+					<tr>
+					<td><i class="fab fa-youtube" >999+</td> </tr>
+
+				</table>
+		</div>
+	</div>
+	
+</div>
+<div></div>
+
+<div class="footer"> Copyright 2021 © HOA BAN FOOD™</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/js.js" type="text/javascript" charset="utf-8" async defer></script>
+</html>
